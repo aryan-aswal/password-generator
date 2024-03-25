@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <section class="heading-section">
+                <h1>Password Generator</h1>
+            </section>
+
+            <section id="copy-section">
+                <h2 id="display">Click Generator</h2>
+                <i class="fa-solid fa-copy copy-button" id="copy-button" onclick="copyContent()"></i>
+            </section>
+            
+            <section class="pass-length-section">
+                <p>LENGTH: <span id="pass-length"></span></p>
+                <div class="slider-section">
+                    <input type="range" min="1" max="20" value="10" class="slider" id="myRange" step="1">
+                </div>
+            </section>
+
+            <section class="setting-section">
+                <p class="setting-para">SETTINGS:</p>
+                <div class="setting-section-div">
+                    <div class="setting-section-uppercase">
+                        <p>Include Uppercase</p>
+                        <div class="checkbox-div">
+                            <input type="checkbox" name="" class="checkbox" id="checkbox1">
+                            <label for="checkbox1" class="switch"></label>
+                        </div>
+                    </div>
+                    <div class="setting-section-lowercase">
+                        <p>Include Lowercase</p>
+                        <div class="checkbox-div">
+                            <input type="checkbox" name="" class="checkbox" id="checkbox2"> 
+                            <label for="checkbox2" class="switch"></label>
+                        </div>
+                    </div>
+                    <div class="setting-section-numbers">
+                        <p>Include Numbers</p>
+                        <div class="checkbox-div">
+                            <input type="checkbox" name="" class="checkbox" id="checkbox3"> 
+                            <label for="checkbox3" class="switch"></label>
+                        </div>
+                    </div>
+                    <div class="setting-section-symbols">
+                        <p>Include Symbols</p>
+                        <div class="checkbox-div">
+                            <input type="checkbox" name="" class="checkbox" id="checkbox4"> 
+                            <label for="checkbox4" class="switch"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="button-section">
+                <button id="generate">GENERATE PASSWORD</button>
+            </section>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/161f8c2d97.js" crossorigin="anonymous"></script>
+</body>
+</html>
